@@ -8,9 +8,9 @@ class OrdersSchema extends Schema {
     this.create('orders', (table) => {
       table.increments()
       table.string('product_id').nullable()
-      table.string('qty').nullable()
-      table.string('price').nullable()
-      table.string('transaction_id').nullable()
+      table.integer('qty').nullable()
+      table.float('price').nullable()
+      table.integer('transaction_id').nullable()
       table.timestamps()
     })
   }

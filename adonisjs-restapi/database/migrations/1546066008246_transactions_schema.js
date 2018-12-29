@@ -7,7 +7,7 @@ class TransactionsSchema extends Schema {
   up () {
     this.create('transactions', (table) => {
       table.increments()
-      table.string('total').nullable()
+      table.integer('total').nullable()
       table.timestamps()
     })
   }

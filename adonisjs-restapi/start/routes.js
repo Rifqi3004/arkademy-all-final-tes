@@ -27,7 +27,7 @@ Route.delete('product/:id', 'ProductController.delete')
 Route.get('orders', 'OrderController.index')
 // Route.get('order/:id', 'OrderController.show')
 Route.post('order', 'OrderController.store')
-Route.put('order/:id', 'OrderController.update')
+// Route.put('order/:id', 'OrderController.update')
 Route.patch('order/:id', 'OrderController.patch')
 Route.delete('order/:id', 'OrderController.delete')
 
